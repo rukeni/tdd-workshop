@@ -23,7 +23,7 @@ module.exports = {
 
     '^@/pages/(.*)$': '<rootDir>/pages/$1',
   },
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.js', "jest-plugin-context/setup"],
   testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/.next/'],
   transform: {
     // Use babel-jest to transpile tests with the next/babel preset
